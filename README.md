@@ -43,6 +43,19 @@ After creating a web project in firebase,
 3. Select the **CDN** radio button
 4. Copy the code provided excluding the script tags
 5. Paste that code to [script.js](./script.js)
+6. Cut your fiebase config to [secrets.js](./secrets.js) and remember to import it in `script.js`
+
+    ```js
+    export const firebaseConfig = {
+        apiKey: "",
+        authDomain: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: "",
+        measurementId: ""
+    };
+    ```
 
 ### Building React App
 
